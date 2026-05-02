@@ -1,0 +1,65 @@
+{
+  "name": "PullNova AI Discovery Service",
+  "version": "1.0.0",
+  "description": "MCP-compatible service descriptor for AI-native code review and CI/CD intelligence",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "PullNova \u2014 AI-Powered Developer Productivity Platform"
+    },
+    "description": {
+      "type": "string",
+      "description": "AI-native code review, CI/CD intelligence, and quality gates for engineering teams"
+    },
+    "url": {
+      "type": "string",
+      "description": "https://pullnova.com"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": [
+        "AI Code Review",
+        "CI/CD Intelligence",
+        "Quality Gates",
+        "Pull Request Analytics",
+        "Team Insights"
+      ]
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pullnova.com/ai/service.json"
+    },
+    {
+      "rel": "website",
+      "href": "https://pullnova.com"
+    },
+    {
+      "rel": "llms",
+      "href": "https://pullnova.com/llms.txt"
+    },
+    {
+      "rel": "about",
+      "href": "https://pullnova.com/about.html"
+    }
+  ]
+}
