@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PullNova",
+  "url": "https://pullnova.com",
+  "description": "AI-native code review and CI/CD intelligence platform for engineering teams",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://github.com/lianghuahuang888-dev/pullnova-com",
+    "https://pullnova.net",
+    "https://pullnova.com"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "url": "https://pullnova.com/about.html"
+  }
+}
