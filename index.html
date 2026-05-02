@@ -1,11 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PullNova</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PullNova — AI-Powered Developer Productivity Platform | Deploy Smarter</title>
+<meta name="description" content="PullNova accelerates your development workflow with AI-powered code review, CI/CD optimization, and smart automation. Built for engineering teams shipping at scale.">
+<meta name="keywords" content="AI developer tools, code automation, AI code review, CI/CD optimization, developer productivity, PullNova">
+<link rel="canonical" href="https://pullnova.com/">
+<meta property="og:title" content="PullNova — AI-Powered Developer Productivity Platform">
+<meta property="og:description" content="Accelerate your development workflow with AI-powered code review, CI/CD optimization, and smart automation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pullnova.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="last-modified" content="2026-05-02T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-05-02T00:00:00+00:00">
+<meta property="article:published_time" content="2026-01-15T00:00:00+00:00">
+<meta name="revised" content="2026-05-02T00:00:00+00:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; background: #f8fafc; color: #1e293b; }
+  .navbar { background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 100%); padding: 1rem 0; }
+  .navbar-brand { color: #fff !important; font-weight: 800; font-size: 1.5rem; }
+  .nav-link { color: rgba(255,255,255,0.85) !important; margin-left: 1rem; }
+  .hero { background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #16213e 100%); color: #fff; padding: 6rem 0 4rem; text-align: center; }
+  .hero h1 { font-size: 3.5rem; font-weight: 800; background: linear-gradient(90deg, #7c5cff, #00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero p { font-size: 1.25rem; color: #b0b0d0; max-width: 700px; margin: 1.5rem auto; }
+  .btn-primary-gradient { background: linear-gradient(135deg, #7c5cff, #00d4ff); border: none; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-block; }
+  .btn-primary-gradient:hover { opacity: 0.9; color: #fff; }
+  .section { padding: 4rem 0; }
+  .section-title { text-align: center; font-weight: 800; margin-bottom: 1rem; color: #0a0a2e; }
+  .section-subtitle { text-align: center; color: #64748b; max-width: 600px; margin: 0 auto 3rem; }
+  .feature-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); text-align: center; height: 100%; transition: transform 0.2s; }
+  .feature-card:hover { transform: translateY(-4px); }
+  .feature-icon { font-size: 2.5rem; color: #7c5cff; margin-bottom: 1rem; }
+  .feature-card h3 { font-weight: 700; margin-bottom: 0.75rem; }
+  .feature-card p { color: #64748b; }
+  .stats { background: linear-gradient(135deg, #7c5cff, #00d4ff); color: #fff; padding: 3rem 0; }
+  .stat-box { text-align: center; padding: 1rem; }
+  .stat-num { font-size: 2.5rem; font-weight: 800; }
+  .stat-label { font-size: 0.95rem; opacity: 0.9; }
+  .use-case { background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #7c5cff; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .use-case h4 { font-weight: 700; color: #0a0a2e; }
+  .use-case p { color: #64748b; margin-bottom: 0; }
+  .pricing-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); text-align: center; }
+  .pricing-card.featured { border: 2px solid #7c5cff; }
+  .price { font-size: 3rem; font-weight: 800; color: #0a0a2e; }
+  .faq-item { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .faq-item h5 { font-weight: 700; color: #0a0a2e; }
+  footer { background: #0a0a2e; color: #a0a0b8; padding: 3rem 0; }
+  footer a { color: #7c5cff; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://pullnova.com/#website",
+      "url": "https://pullnova.com/",
+      "name": "PullNova",
+      "description": "AI-powered developer productivity platform with smart code review, CI/CD optimization, and workflow automation.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PullNova",
+        "url": "https://pullnova.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://pullnova.com/#webapp",
+      "url": "https://pullnova.com/",
+      "name": "PullNova — AI-Powered Developer Productivity Platform",
+      "description": "Accelerate your development workflow with AI-powered code review, CI/CD optimization, and smart automation. Built for engineering teams shipping at scale.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pullnova.com/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is PullNova?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PullNova is an AI-powered developer productivity platform that automates code review, optimizes CI/CD pipelines, and provides intelligent workflow automation for engineering teams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does PullNova's AI code review work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PullNova's AI analyzes pull requests in real-time, identifying bugs, security vulnerabilities, performance issues, and style violations. It provides actionable suggestions with context-aware explanations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages and frameworks does PullNova support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PullNova supports 30+ languages including JavaScript, TypeScript, Python, Go, Rust, Java, C++, Ruby, and PHP, with deep framework awareness for React, Next.js, Django, Spring Boot, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is PullNova free for open source teams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! PullNova is completely free for public open source repositories. We offer a generous free tier for private repos and team plans starting at $12/user/month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does PullNova integrate with my existing tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PullNova integrates natively with GitHub, GitLab, Bitbucket, Slack, Jira, Linear, and your existing CI/CD stack including GitHub Actions, GitLab CI, Jenkins, and CircleCI."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pullnova.com/#organization",
+      "url": "https://pullnova.com/",
+      "name": "PullNova",
+      "description": "AI-powered developer productivity platform",
+      "foundingDate": "2025-06-01",
+      "areaServed": "Worldwide",
+      "sameAs": [
+        "https://github.com/lianghuahuang888-dev/pullnova-com",
+        "https://pullnova.net/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://pullnova.com/about.html"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-  <h1>PullNova</h1>
-  <p>Coming soon.</p>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/"><i class="fas fa-code-branch"></i> PullNova</a>
+    <div class="ms-auto">
+      <a href="/" class="nav-link">Home</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>PullNova</h1>
+    <p>AI-powered code review and CI/CD optimization. Catch bugs before they merge, ship 3x faster, and keep your engineering team in flow.</p>
+    <a href="#features" class="btn-primary-gradient">Explore Features <i class="fas fa-arrow-right ms-2"></i></a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="container">
+    <div class="row">
+      <div class="col-3 stat-box"><div class="stat-num">10K+</div><div class="stat-label">Developers</div></div>
+      <div class="col-3 stat-box"><div class="stat-num">2M+</div><div class="stat-label">PRs Analyzed</div></div>
+      <div class="col-3 stat-box"><div class="stat-num">3x</div><div class="stat-label">Faster Reviews</div></div>
+      <div class="col-3 stat-box"><div class="stat-num">30+</div><div class="stat-label">Languages</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2 class="section-title">Supercharge Your Workflow</h2>
+    <p class="section-subtitle">PullNova plugs into your existing stack and starts delivering value from day one.</p>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-robot"></i></div><h3>AI Code Review</h3><p>Real-time PR analysis catching bugs, security issues, and performance regressions before they reach production. Context-aware, not just linting.</p></div></div>
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-rocket"></i></div><h3>CI/CD Intelligence</h3><p>Automatically detect flaky tests, optimize build pipelines, and slash CI minutes by up to 40% with intelligent caching and parallelization.</p></div></div>
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-shield-halved"></i></div><h3>Security Scanning</h3><p>Deep SAST/DAST analysis integrated into every PR. Catch OWASP Top 10 vulnerabilities, leaked secrets, and supply chain risks automatically.</p></div></div>
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-code"></i></div><h3>Smart Refactoring</h3><p>AI-powered refactoring suggestions that improve code quality, reduce technical debt, and enforce best practices across your entire codebase.</p></div></div>
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3>Team Analytics</h3><p>DORA metrics, review turnaround time, and code health dashboards that help engineering leaders make data-driven decisions.</p></div></div>
+      <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="fas fa-plug"></i></div><h3>Deep Integrations</h3><p>Native GitHub, GitLab, Bitbucket, Slack, Jira, and Linear integrations. Works with your existing CI/CD — GitHub Actions, GitLab CI, Jenkins, CircleCI.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <h2 class="section-title">How Teams Use PullNova</h2>
+    <p class="section-subtitle">From startups to enterprises, engineering teams ship better code faster.</p>
+    <div class="use-case"><h4><i class="fas fa-bolt me-2" style="color:#7c5cff;"></i>PR Review Automation</h4><p>PullNova analyzes every pull request in under 60 seconds. It catches logic bugs, suggests performance improvements, checks for security vulnerabilities, and enforces team style guides — all before a human reviewer even looks at it.</p></div>
+    <div class="use-case"><h4><i class="fas fa-gauge-high me-2" style="color:#7c5cff;"></i>CI/CD Pipeline Optimization</h4><p>Stop paying for wasted CI minutes. PullNova identifies flaky tests, recommends parallelization strategies, and caches dependencies intelligently. Teams report 30-50% reduction in CI costs after enabling PullNova.</p></div>
+    <div class="use-case"><h4><i class="fas fa-brain me-2" style="color:#7c5cff;"></i>Technical Debt Management</h4><p>PullNova tracks code complexity trends, identifies duplication, and suggests refactoring opportunities. It prioritizes the most impactful changes so your team can reduce tech debt without stopping feature work.</p></div>
+    <div class="use-case"><h4><i class="fas fa-lock me-2" style="color:#7c5cff;"></i>Compliance & Governance</h4><p>Enforce SOC 2, HIPAA, and GDPR compliance requirements automatically. PullNova checks for PII leaks, enforces access control patterns, and generates audit-ready compliance reports for every deployment.</p></div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <h2 class="section-title">Simple, Transparent Pricing</h2>
+    <p class="section-subtitle">Start free, scale as you grow.</p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4"><div class="pricing-card"><h4>Starter</h4><div class="price">Free</div><p class="text-muted">For individuals & open source</p><hr><p><i class="fas fa-check text-success me-2"></i>Unlimited public repos</p><p><i class="fas fa-check text-success me-2"></i>AI code review</p><p><i class="fas fa-check text-success me-2"></i>5 private repos</p><p><i class="fas fa-check text-success me-2"></i>Slack integration</p><a href="#features" class="btn btn-outline-primary w-100 mt-3">Get Started</a></div></div>
+      <div class="col-md-4"><div class="pricing-card featured"><span class="badge bg-primary mb-2">Most Popular</span><h4>Team</h4><div class="price">$12<small style="font-size:1rem;">/user/mo</small></div><p class="text-muted">For growing engineering teams</p><hr><p><i class="fas fa-check text-success me-2"></i>Everything in Starter</p><p><i class="fas fa-check text-success me-2"></i>Unlimited private repos</p><p><i class="fas fa-check text-success me-2"></i>CI/CD optimization</p><p><i class="fas fa-check text-success me-2"></i>Security scanning</p><p><i class="fas fa-check text-success me-2"></i>Team analytics</p><p><i class="fas fa-check text-success me-2"></i>Priority support</p><a href="#features" class="btn btn-primary-gradient w-100 mt-3">Start Free Trial</a></div></div>
+      <div class="col-md-4"><div class="pricing-card"><h4>Enterprise</h4><div class="price">Custom</div><p class="text-muted">For large organizations</p><hr><p><i class="fas fa-check text-success me-2"></i>Everything in Team</p><p><i class="fas fa-check text-success me-2"></i>SSO / SAML</p><p><i class="fas fa-check text-success me-2"></i>On-premise deployment</p><p><i class="fas fa-check text-success me-2"></i>Custom integrations</p><p><i class="fas fa-check text-success me-2"></i>Dedicated support</p><p><i class="fas fa-check text-success me-2"></i>SLA guarantee</p><a href="about.html" class="btn btn-outline-primary w-100 mt-3">Contact Sales</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container" style="max-width:800px;">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know about PullNova.</p>
+    <div class="faq-item"><h5>What makes PullNova different from other code review tools?</h5><p>Unlike traditional static analysis tools, PullNova uses large language models to understand code context and intent. It catches semantic bugs, not just syntax issues, and provides human-readable explanations.</p></div>
+    <div class="faq-item"><h5>How long does it take to set up?</h5><p>PullNova installs as a GitHub/GitLab app in under 2 minutes. It starts analyzing your first PR immediately with sensible defaults, and you can customize rules over time.</p></div>
+    <div class="faq-item"><h5>Is my code sent to third-party AI providers?</h5><p>For Team and Enterprise plans, PullNova can run entirely within your infrastructure. For Starter, code is processed through our secure API with zero retention. We never train on your code.</p></div>
+    <div class="faq-item"><h5>Can I customize the review rules?</h5><p>Absolutely. PullNova supports custom rule sets defined in YAML, team-specific style guides, and per-repository configurations. You can also train it on your team's historical code review decisions.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3"><h5 style="color:#fff;">PullNova</h5><p>AI-powered developer productivity. Ship better code, faster.</p></div>
+      <div class="col-md-2 mb-3"><h6 style="color:#fff;">Product</h6><a href="#features" class="d-block mb-1">Features</a><a href="#pricing" class="d-block mb-1">Pricing</a><a href="#" class="d-block">Changelog</a></div>
+      <div class="col-md-2 mb-3"><h6 style="color:#fff;">Company</h6><a href="about.html" class="d-block mb-1">About</a><a href="about.html#contact" class="d-block mb-1">Contact</a><a href="#" class="d-block">Careers</a></div>
+      <div class="col-md-2 mb-3"><h6 style="color:#fff;">Legal</h6><a href="privacy-policy.html" class="d-block mb-1">Privacy Policy</a><a href="#" class="d-block">Terms of Service</a></div>
+      <div class="col-md-2 mb-3"><h6 style="color:#fff;">Connect</h6><a href="https://github.com/lianghuahuang888-dev/pullnova-com" class="d-block mb-1"><i class="fab fa-github"></i> GitHub</a><a href="#" class="d-block"><i class="fab fa-twitter"></i> Twitter</a></div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,0.1);">
+    <div class="text-center"><small>&copy; 2026 PullNova. All rights reserved.</small></div>
+  </div>
+</footer>
+
 </body>
 </html>
