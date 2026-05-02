@@ -1,34 +1,25 @@
-# AI Crawler Access Policy for PullNova
-# This file controls how AI systems interact with this site.
+# AI Discovery for pullnova.com
+# RFC 8615 - /.well-known/ai.txt
+# Purpose: Help AI crawlers (ChatGPT, Claude, Perplexity, Gemini) discover content.
 
-User-agent: GPTBot
-Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /privacy-policy.html
+[site]
+url: https://pullnova.com/
+description: PullNova - AI-powered developer productivity platform for code review, CI/CD, workflow automation.
+llms_file: https://pullnova.com/llms.txt
+llms_full_file: https://pullnova.com/llms-full.txt
 
-User-agent: CCBot
-Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /privacy-policy.html
+[sections]
+- Home: https://pullnova.com/
+- Features: https://pullnova.com/#features
+- Pricing: https://pullnova.com/#pricing
+- Documentation: https://pullnova.com/docs/
 
-User-agent: Claude-Web
-Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /privacy-policy.html
+[crawl_hints]
+priority: high
+update_frequency: weekly
+preferred_format: markdown
 
-User-agent: PerplexityBot
-Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /privacy-policy.html
-
-User-agent: meta-externalagent
-Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /privacy-policy.html
-
-Sitemap: https://pullnova.com/sitemap.xml
+[social]
+github: https://github.com/pullnova
+twitter: https://twitter.com/pullnova
+linkedin: https://linkedin.com/company/pullnova
