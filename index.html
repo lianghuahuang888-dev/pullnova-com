@@ -1,27 +1,4 @@
-
-            <div class="feature-comparison">
-              <h3>PullNova Feature Overview</h3>
-              <table class="features-table">
-                <thead><tr><th>Feature</th><th>Free</th><th>Pro</th><th>Enterprise</th></tr></thead>
-                <tbody>
-                  <tr><td>AI Code Review</td><td>✓</td><td>✓</td><td>✓</td></tr>
-                  <tr><td>CI/CD Intelligence</td><td>✓</td><td>✓</td><td>✓</td></tr>
-                  <tr><td>Security Scanning</td><td>✓</td><td>✓</td><td>✓</td></tr>
-                  <tr><td>30+ Language Support</td><td>✓</td><td>✓</td><td>✓</td></tr>
-                  <tr><td>Custom Rules</td><td>—</td><td>✓</td><td>✓</td></tr>
-                  <tr><td>Priority AI Analysis</td><td>—</td><td>—</td><td>✓</td></tr>
-                  <tr><td>SLA Guarantee</td><td>—</td><td>—</td><td>✓</td></tr>
-                </tbody>
-              </table>
-              <h4>Key Benefits</h4>
-              <ul>
-                <li>Reduce code review turnaround time by up to 70%</li>
-                <li>Catch security vulnerabilities before they reach production</li>
-                <li>Optimize CI/CD pipeline execution with intelligent caching</li>
-                <li>Improve code quality consistency across your engineering team</li>
-                <li>Seamless integration with GitHub, GitLab, Bitbucket, and more</li>
-              </ul>
-            </div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -75,6 +52,18 @@
   footer { background: #0a0a2e; color: #a0a0b8; padding: 3rem 0; }
   footer a { color: #7c5cff; text-decoration: none; }
   footer a:hover { text-decoration: underline; }
+
+  /* Feature Comparison Table */
+  .features-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+  .features-table th { background: linear-gradient(135deg, #0a0a2e, #1a1a4e); color: #fff; padding: 12px 16px; text-align: left; }
+  .features-table td { padding: 10px 16px; border-bottom: 1px solid #e2e8f0; }
+  .features-table tr:hover td { background: #f1f5f9; }
+  .features-table td:not(:first-child) { text-align: center; }
+  .feature-comparison { background: #fff; border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .feature-comparison h3 { font-weight: 700; color: #0a0a2e; margin-bottom: 0.5rem; }
+  .feature-comparison h4 { font-weight: 700; color: #0a0a2e; margin-top: 1.5rem; }
+  .feature-comparison ul { color: #64748b; }
+  .feature-comparison ul li { margin-bottom: 0.5rem; }
 </style>
 <script type="application/ld+json">
 {
@@ -226,6 +215,17 @@
 </script>
 
     <link rel="alternate" type="application/rss+xml" title="PullNova Blog RSS" href="https://pullnova.com/rss.xml">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- End Google Analytics 4 -->
+
 </head>
 <body>
 
@@ -259,6 +259,35 @@
     </div>
   </div>
 </div>
+
+
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="feature-comparison">
+      <h3>PullNova Feature Overview</h3>
+      <table class="features-table">
+        <thead><tr><th>Feature</th><th>Free</th><th>Pro</th><th>Enterprise</th></tr></thead>
+        <tbody>
+          <tr><td>AI Code Review</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>CI/CD Intelligence</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Security Scanning</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>30+ Language Support</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Custom Rules</td><td>—</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Priority AI Analysis</td><td>—</td><td>—</td><td>✓</td></tr>
+          <tr><td>SLA Guarantee</td><td>—</td><td>—</td><td>✓</td></tr>
+        </tbody>
+      </table>
+      <h4>Key Benefits</h4>
+      <ul>
+        <li>Reduce code review turnaround time by up to 70%</li>
+        <li>Catch security vulnerabilities before they reach production</li>
+        <li>Optimize CI/CD pipeline execution with intelligent caching</li>
+        <li>Improve code quality consistency across your engineering team</li>
+        <li>Seamless integration with GitHub, GitLab, Bitbucket, and more</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section id="features" class="section">
   <div class="container">
