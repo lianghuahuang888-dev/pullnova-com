@@ -1,0 +1,21 @@
+# PullNova — LLMs.txt
+
+> PullNova is an AI-powered developer productivity platform for code review, CI/CD optimization, and workflow automation.
+
+## Main Content
+
+- [Home](index.html): PullNova — AI-powered code review and CI/CD optimization platform overview
+- [About](about.html): PullNova's mission, story, team, and contact information
+- [Privacy Policy](privacy-policy.html): How PullNova handles data and protects user privacy
+
+## Platform Overview
+
+PullNova provides AI-powered tools for engineering teams:
+- **AI Code Review**: Real-time PR analysis catching bugs, security issues, and performance regressions
+- **CI/CD Intelligence**: Pipeline optimization, flaky test detection, intelligent caching
+- **Security Scanning**: SAST/DAST analysis, OWASP Top 10 detection, secret scanning
+- **Smart Refactoring**: AI-powered code quality improvements and technical debt reduction
+- **Team Analytics**: DORA metrics, review turnaround time, code health dashboards
+- **Deep Integrations**: GitHub, GitLab, Bitbucket, Slack, Jira, Linear
+
+PullNova supports 30+ languages and offers a free tier for open source teams.
